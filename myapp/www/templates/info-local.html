@@ -1,0 +1,120 @@
+<ion-view view-title="ADN">
+  <ion-content>
+
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  	<link rel="stylesheet" href="../css/adn.css">
+  	<link rel="stylesheet" href="../css/style.css">
+
+  	<div class="container fondoblanco">
+		<br>   
+		<hr class="line1">
+		<hr class="line">
+		<div class="row">
+			<div class="col TituloAmarillo text-center"><span class=" ion-ionic"></span>ADN
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col">   
+				<p class = "pp">El ácido desoxirribonucleico, abreviado como ADN, siempre es un ácido nucleico que contiene las instrucciones genéticas usadas en el desarrollo y funcionamiento de todos los organismos vivos y algunos virus; también es responsable de la transmisión hereditaria. La función principal de la molécula de ADN es el almacenamiento a largo plazo de información para construir otros componentes de las células, como las proteínas y las moléculas de ARN. Los segmentos de ADN que llevan esta información genética son llamados genes, pero las otras secuencias de ADN tienen propósitos estructurales o toman parte en la regulación del uso de esta información genética.
+
+Desde el punto de vista químico, el ADN es un polímero de nucleótidos, es decir, un polinucleótido. Cada nucleótido, a su tiempo, está formado por un glúcido (la desoxirribosa), una base nitrogenada (que puede ser adenina→A, timina→T, citosina→C o guanina→G) y un grupo fosfato (derivado del ácido fosfórico). Lo que distingue a un polinucleótido de otro es, entonces, la base nitrogenada, y por ello la secuencia del ADN se especifica nombrando solo la secuencia de sus bases. La disposición secuencial de estas cuatro bases a lo largo de la cadena es la que codifica la información genética, siguiendo el siguiente criterio de complementariedad: A-T y G-C. Esto se debe a que la adenina y la guanina son de mayor tamaño que la timina y la citosina, por lo que este criterio permite cumplir una uniformidad. En los organismos vivos, el ADN se presenta como una doble cadena de nucleótidos, en la que las dos hebras están unidas entre sí por unas conexiones denominadas puentes de hidrógeno.1
+
+Para que la información que contiene el ADN pueda ser utilizada por la maquinaria celular, debe copiarse en primer lugar en unos trenes de nucleótidos, más cortos y con unas unidades diferentes, llamados ARN. Las moléculas de ARN se copian exactamente del ADN mediante un proceso denominado transcripción. Una vez procesadas en el núcleo celular, las moléculas de ARN pueden salir al citoplasma para su utilización posterior. La información contenida en el ARN se interpreta usando el código genético, que especifica la secuencia de los aminoácidos de las proteínas, según una correspondencia de un triplete de nucleótidos (codón) para cada aminoácido. Esto es, la información genética (esencialmente: qué proteínas se van a producir en cada momento del ciclo de vida de una célula) se halla codificada en las secuencias de nucleótidos del ADN y debe traducirse para poder funcionar. Tal traducción se realiza usando el código genético a modo de diccionario. El diccionario "secuencia de nucleótido-secuencia de aminoácidos" permite el ensamblado de largas cadenas de aminoácidos (las proteínas) en el citoplasma de la célula. Por ejemplo, en el caso de la secuencia de ADN indicada antes (ATGCTAGCATCG...), la ARN polimerasa utilizaría como molde la cadena complementaria de dicha secuencia de ADN (que sería TAC-GAT-CGT-AGC-...) para transcribir una molécula de ARNm que se leería AUG-CUA-GCA-UCG-...; el ARNm resultante, utilizando el código genético, se traduciría como la secuencia de aminoácidos metionina-leucina-ácido aspártico-arginina-... </p>
+			</div>
+		</div>
+	
+
+	<!--CÓDIGO ADN-->
+	<hr class="line1">
+	<hr class="line">
+
+	<canvas id="canvas"></canvas>
+	<hr>
+	<div class="container">
+		<div class="row">
+			<div class="col col-100">
+				<h1 class="TituloAmarillo text-center padd">Propiedades físicas y químicas</h1>
+				<p class="psty" style="color: white; font-size: 15px;font-weight: bolder;font-family: cursive black;">El ADN es un largo polímero formado por unidades repetitivas, los nucleótidos.18​19​ Una doble cadena de ADN mide de 22 a 26 ángstroms (2,2 a 2,6 nanómetros) de ancho, y una unidad (un nucleótido) mide 3,3  (0,33 nm) de largo.20​ Aunque cada unidad individual que se repite es muy pequeña, los polímeros de ADN pueden ser moléculas enormes que contienen millones de nucleótidos. Por ejemplo, el cromosoma humano más largo, el cromosoma número 1, tiene aproximadamente 220 millones de pares de bases.</p>
+
+	<div class="svg-container">
+	  <?xml version="1.0" standalone="no" ?>
+	  <svg width="500" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" id="SVGRoot">
+	    
+	<path id="blue-back" 
+	          d="M 50 40 
+	             C 50 200, 200 200, 200 350 
+	             C 200 500, 50 500, 50 650 
+	             C 50 800, 200 800, 200 950
+	             C 200 1100, 50 1100, 50 1350 " 
+	          stroke-width="25" 
+	          stroke-linecap="round" 
+	          stroke="#00B9E4" 
+	          fill="transparent" />
+	    <!--<animate id="blue-back-animation" 
+	             xlink:href="#blue-back" 
+	             attributeName="d" 
+	             type="translate" 
+	             to="M 200 40 
+	                 C 200 200, 50 200, 50 350 
+	                 C 50 500, 200 500, 200 650 
+	                 C 200 800, 50 800, 50 950
+	                 C 50 1100, 200 1100, 200 1350" 
+	             begin="0s" 
+	             dur="3s" 
+	             repeatCount="indefinite" />-->
+	    
+
+
+	    <path id="strand-top" class="strand-shrink" d="M 85 270, 170 270 M 85 570, 170 570 M 85 870, 170 870" stroke-width="8" stroke-linecap="round" stroke="#bbd430" fill="transparent" />
+
+	    <path id="strand-top-mid" class="strand-shrink" d="M 70 310, 185 310 M 70 610, 185 610 M 70 910, 185 910" stroke-width="8" stroke-linecap="round" stroke="#bbd430" fill="transparent" />
+
+	    <path id="strand-mid" class="strand-shrink" d="M 60 50, 190 50 M 60 350, 190 350 M 60 650, 190 650 M 60 950, 190 950" stroke-width="8" stroke-linecap="round" stroke="#bbd430" fill="transparent" />
+
+	    <path id="strand-bot-mid" class="strand-shrink" d="M 65 90, 185 90 M 65 390, 185 390 M 65 690, 185 690" stroke-width="8" stroke-linecap="round" stroke="#bbd430" fill="transparent" />
+
+	    <path id="strand-bot" class="strand-shrink" d="M 85 130, 170 130 M 80 430, 170 430 M 80 730, 170 730" stroke-width="8" stroke-linecap="round" stroke="#bbd430" fill="transparent" />
+	    
+	<path id="blue-front" 
+	          d="M 200 40 
+	             C 200 200, 50 200, 50 350 
+	             C 50 500, 200 500, 200 650 
+	             C 200 800, 50 800, 50 950
+	             C 50 1100, 200 1100, 200 1350" 
+	          stroke-width="25" 
+	          stroke-linecap="round" 
+	          stroke="#00B9E4" 
+	          fill="transparent" />
+	    <!--<animate id="blue-front-animation" 
+	             xlink:href="#blue-front" 
+	             attributeName="d" 
+	             type="translate" 
+	             to="M 50 40 
+	                 C 50 200, 200 200, 200 350 
+	                 C 200 500, 50 500, 50 650 
+	                 C 50 800, 200 800, 200 960
+	                 C 200 1100, 50 1100, 50 1350" 
+	             begin="0s" 
+	             dur="3s" 
+	             repeatCount="indefinite" />-->
+	  </svg>
+	</div>
+
+
+
+
+				
+				<p class="psty" style="color: white; font-size: 15px;font-weight: bolder;font-family: cursive black;">En los organismos vivos, el ADN no suele existir como una molécula individual, sino como una pareja de moléculas estrechamente asociadas. Las dos cadenas de ADN se enroscan sobre sí mismas formando una especie de escalera de caracol, denominada doble hélice. El modelo de estructura en doble hélice fue propuesto en 1953 por James Watson y Francis Crick (el artículo «Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid» fue publicado el 25 de abril de 1953 en Nature), después de obtener una imagen de la estructura de doble hélice gracias a la refracción por rayos X hecha por Rosalind Franklin.22​ El éxito de este modelo radicaba en su consistencia con las propiedades físicas y químicas del ADN. El estudio mostraba, además, que la complementariedad de bases podía ser relevante en su replicación, y también la importancia de la secuencia de bases como portadora de información genética.23​24​25​ Cada unidad que se repite, el nucleótido, contiene un segmento de la estructura de soporte (azúcar + fosfato), que mantiene la cadena unida, y una base, que interacciona con la otra cadena de ADN en la hélice. En general, una base ligada a un azúcar se denomina nucleósido y una base ligada a un azúcar y a uno o más grupos fosfatos recibe el nombre de nucleótido.</p>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/DNA_chemical_structure_es-2008-08-01.svg/525px-DNA_chemical_structure_es-2008-08-01.svg.png" alt="img adn" class="imglol" style="padding: 0; margin: 0;" width="320" height="500">
+				<img src="http://adnyyo.com.mx/wp-content/uploads/2017/03/icon-adn.png" alt="img adn" width="320" height="500" class="imglol" width="">
+			</div>
+		</div>
+	</div>
+
+
+    </div>
+  </ion-content>
+</ion-view>
