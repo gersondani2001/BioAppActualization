@@ -60,6 +60,7 @@
 }
 #divInferior p{
   padding-bottom: 5px;
+  padding-left: 12%;
   padding-top: 0 !important;
 }
 #divInferior input[type="button"]{

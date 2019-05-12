@@ -1,4 +1,8 @@
+/*codigo de css3 para los estilos del proyecto*/
 
+p{
+	text-align: justify !important;
+}
 .padding{
 	box-sizing: border-box;
 	margin: 0 !important;
